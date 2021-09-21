@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import TopNav from "./Components/TopNav";
+import Home from "./Components/Home";
+import AboutUs from "./Components/About";
+import Contact from "./Components/Contact";
+import Services from "./Components/Services";
+import TermsAndConditions from "./Components/Footer/subComponents/TermsAndConditions";
+import PrivacyPolicy from "./Components/Footer/subComponents/PrivacyPolicy";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <TopNav />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/aboutUs" exact component={AboutUs} />
+          <Route path="/services" exact component={Services} />
+          <Route path="/contact" exact component={Contact} />
+          <Route path="/tc" exact component={TermsAndConditions} />
+          <Route path="/pp" exact component={PrivacyPolicy} />
+        </Switch>
+      </Router>
     </div>
   );
 }
