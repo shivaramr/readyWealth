@@ -5,7 +5,7 @@ import { style } from "./style";
 
 const Contact = memo(()=> {
   return (
-      <div class={style.secondDiv}>
+      <div class={style.main}>
         <Side />
         <Form />
       </div>
