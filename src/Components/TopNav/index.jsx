@@ -18,7 +18,7 @@ const TopNav = memo(function TopNav() {
         </button>
         <div class={style.collapse} id="navbarSupportedContent">
           <ul class={style.navUL}>
-            <li class={style.navLIActive}>
+            <li class={style.navItem}>
               <a class={style.navLink} href="/">
                 Home
               </a>

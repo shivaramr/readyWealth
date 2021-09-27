@@ -1,11 +1,15 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
+import Form from "./Form/Form";
+import Side from "./SideNav/Side";
+import { style } from "./style";
 
-const Contact = memo(function Contact(props) {
-    return (
-        <div>
-            Contact Us
-        </div>
-    )
-})
+const Contact = memo(()=> {
+  return (
+      <div class={style.secondDiv}>
+        <Side />
+        <Form />
+      </div>
+  );
+});
 
-export default Contact
+export default Contact;

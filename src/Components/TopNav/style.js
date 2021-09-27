@@ -1,6 +1,6 @@
 export const style = {
-  navClass: "navbar navbar-expand-md navbar-light bg-light fixed-top",
-  container: 'container',
+  navClass: "navbar navbar-expand-md navbar-light bg-light sticky-top",
+  container: "container",
   logo: "navbar-brand",
   toggle: "navbar-toggler",
   toggleIcon: "navbar-toggler-icon",

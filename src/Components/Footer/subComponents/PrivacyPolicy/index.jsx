@@ -1,6 +1,6 @@
 import React from "react";
 import { data } from "./data";
-import { style } from './style';
+import { style } from "./style";
 
 function PrivacyPolicy() {
   return (
