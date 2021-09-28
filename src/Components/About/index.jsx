@@ -1,11 +1,12 @@
-import React, { memo } from 'react'
+import React, { memo } from "react";
+import Main from "./Main";
 
-const AboutUs = memo(function AboutUs(props) {
-    return (
-        <div>
-            About Us
-        </div>
-    )
-})
+const AboutUs = memo(() => {
+  return (
+    <div>
+      <Main />
+    </div>
+  );
+});
 
-export default AboutUs
+export default AboutUs;
