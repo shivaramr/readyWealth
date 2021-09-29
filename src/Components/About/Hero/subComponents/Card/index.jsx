@@ -16,7 +16,6 @@ const Card = memo((props) => {
         <h5 class={style.cardHead}>{name}</h5>
         <h6 class={style.cardSubHead}>{designation}</h6>
         <p class={style.cardDesc}>{desc}</p>
-        &nbsp;
         <div class={style.socialLinks}>
           <a href={fb} target="_blank" rel="noopener noreferrer">
             <FaFacebookSquare size={35} style={style.icons} />

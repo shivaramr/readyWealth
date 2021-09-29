@@ -5,23 +5,30 @@ import Card from "./Card";
 import { bdStyl } from "./style";
 
 const Body = memo(() => {
-  const { goal, content, tag } = data || {};
+  const { goal, content, tag, last } = data || {};
 
   return (
-    <Container>
-      <div class={bdStyl.goal}>
-        <h5>{goal.head}</h5>
-        <p>{goal.desc}</p>
-      </div>
+    <div class={bdStyl.main}>
+      <Container>
+        <div class={bdStyl.goal}>
+          <h5>{goal.head}</h5>
+          <p>{goal.desc}</p>
+        </div>
+      </Container>
       <div class={bdStyl.boxes}>
         <div class={bdStyl.frCards}>
           {content.map((element) => (
             <Card key={element.id} element={element} />
           ))}
         </div>
-        <h5>{tag}</h5>
+        <h5 class={bdStyl.tag}>{tag}</h5>
       </div>
-    </Container>
+      <div class={bdStyl.cardMn}>
+        <div class={bdStyl.cardBdy}>
+          <h5>{last}</h5>
+        </div>
+      </div>
+    </div>
   );
 });
 

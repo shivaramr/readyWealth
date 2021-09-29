@@ -4,7 +4,7 @@ import { style } from "./style";
 const TopNav = memo(function TopNav() {
   return (
     <nav class={style.navClass}>
-      <div class={style.container}>
+      {/* <div class={style.container}> */}
         <a class={style.logo} href="/">
           Ready Wealth
         </a>
@@ -43,7 +43,7 @@ const TopNav = memo(function TopNav() {
             Log In
           </button>
         </div>
-      </div>
+      {/* </div> */}
     </nav>
   );
 });

@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import { Container } from "react-bootstrap";
 import { style } from "./style";
 
 const Head = memo((props) => {
@@ -7,7 +6,6 @@ const Head = memo((props) => {
   const { head, pic, desc } = data || {};
 
   return (
-    <Container>
       <div class={style.main}>
         <img
           src={pic}
@@ -20,7 +18,6 @@ const Head = memo((props) => {
           <p>{desc}</p>
         </div>
       </div>
-    </Container>
   );
 });
 
