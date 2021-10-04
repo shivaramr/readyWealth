@@ -5,9 +5,9 @@ export const style = {
   toggle: "navbar-toggler",
   toggleIcon: "navbar-toggler-icon",
   collapse: "collapse navbar-collapse",
-  navUL: "navbar-nav ms-auto",
+  navUL: "navbar-nav m-auto",
   navLIActive: "nav-item border-bottom border-primary active",
   navLink: "nav-link",
   navItem: "nav-item",
-  btn: "btn btn-warning ms-3",
+  btn: "btn btn-warning",
 };
