@@ -7,7 +7,7 @@ function index() {
   return (
     <div>
       <Head />
-      {data.map((ele, id) => (
+      {data.map(({id, ...ele}) => (
         <Body key={id} {...ele} />
       ))}
     </div>

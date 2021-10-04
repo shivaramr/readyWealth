@@ -7,13 +7,8 @@ import { style } from "./style";
 function Side() {
   return (
     <div class={style.main}>
-      {data.map((element) => (
-        <Card
-          key={element.id}
-          title={element.title}
-          logo={element.logo}
-          details={element.details}
-        />
+      {data.map(({ id, title, logo, details }) => (
+        <Card key={id} title={title} logo={logo} details={details} />
       ))}
       <SMedia />
     </div>

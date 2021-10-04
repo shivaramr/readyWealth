@@ -11,15 +11,15 @@ function PrivacyPolicy() {
       <h3>{data.subH1}</h3>
       <p>{data.subP1}</p>
       <ul>
-        {data.subPoints1.map((element, index) => (
-          <li key={index}>{element}</li>
+        {data.subPoints1.map((element, id) => (
+          <li key={id}>{element}</li>
         ))}
       </ul>
 
       <h3>{data.subH2}</h3>
       <ul>
-        {data.subPoints2.map((element, index) => (
-          <li key={index}>{element}</li>
+        {data.subPoints2.map((element, id) => (
+          <li key={id}>{element}</li>
         ))}
       </ul>
 
@@ -37,8 +37,8 @@ function PrivacyPolicy() {
 
       <h3>{data.subH7}</h3>
       <ul>
-        {data.subPoints7.map((element, index) => (
-          <li key={index}>{element}</li>
+        {data.subPoints7.map((element, id) => (
+          <li key={id}>{element}</li>
         ))}
       </ul>
     </div>

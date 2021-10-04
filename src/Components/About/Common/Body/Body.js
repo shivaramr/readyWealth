@@ -17,8 +17,8 @@ const Body = memo(() => {
       </Container>
       <div class={bdStyl.boxes}>
         <div class={bdStyl.frCards}>
-          {content.map((element) => (
-            <Card key={element.id} element={element} />
+          {content.map(({id, ...ele}) => (
+            <Card key={id} element={{...ele}} />
           ))}
         </div>
         <h5 class={bdStyl.tag}>{tag}</h5>

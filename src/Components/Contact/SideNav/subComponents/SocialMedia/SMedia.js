@@ -9,9 +9,9 @@ const SMedia = memo(() => {
       <h3>Social Media</h3>
       <hr />
       <div class={style.iconParent}>
-        {data.map((element) => (
-          <a href={element.link} target="_blank" rel="noopener noreferrer">
-            <element.title size={50} style={style.icons} />
+        {data.map((ele) => (
+          <a key={ele.id} href={ele.link} target="_blank" rel="noopener noreferrer">
+            <ele.title size={50} style={style.icons} />
           </a>
         ))}
       </div>

@@ -5,11 +5,11 @@ import { style } from "./style";
 
 const Hero = memo(() => {
   return (
-      <div class={style.main}>
-        {data.map((element) => (
-          <Card key={element.id} element={element} />
-        ))}
-      </div>
+    <div class={style.main}>
+      {data.map((ele) => (
+        <Card key={ele.id} element={ele} />
+      ))}
+    </div>
   );
 });
 

@@ -1,6 +1,6 @@
 import React, { memo } from "react";
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.css';
+import Carousel from "react-bootstrap/Carousel";
+import "bootstrap/dist/css/bootstrap.css";
 
 const CarouselFile = memo((props) => {
   const { data } = props || [];
@@ -11,21 +11,19 @@ const CarouselFile = memo((props) => {
 
   return (
     <div class="p-5">
-      {Array.isArray(data) && (<Carousel>
-        {data.map((element, id) => (
-          <Carousel.Item key={id} interval={5000}>
-            <img
-              className="d-block w-100"
-              src={element.img}
-              alt="Loading..."
-            />
-            <Carousel.Caption>
-              <h3>{element.label}</h3>
-              <p>{element.text}</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        ))}
-      </Carousel>)}
+      {Array.isArray(data) && (
+        <Carousel>
+          {data?.map(({ id, img, label, text }) => (
+            <Carousel.Item key={id} interval={5000}>
+              <img className="d-block w-100" src={img} alt="Loading..." />
+              <Carousel.Caption>
+                <h3>{label}</h3>
+                <p>{text}</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      )}
     </div>
   );
 });

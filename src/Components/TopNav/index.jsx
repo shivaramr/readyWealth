@@ -28,13 +28,13 @@ const TopNav = memo(() => {
       </button>
       <div class={style.collapse} id="navbarSupportedContent">
         <ul class={style.navUL}>
-          {linkData.map((ele, id) => (
+          {linkData.map(({ id, link, title }) => (
             <li
               key={id}
-              class={checkURL(ele.link) ? style.navLIActive : style.navItem}
+              class={checkURL(link) ? style.navLIActive : style.navItem}
             >
-              <a class={style.navLink} href={ele.link}>
-                {ele.title}
+              <a class={style.navLink} href={link}>
+                {title}
               </a>
             </li>
           ))}
