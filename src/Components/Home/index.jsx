@@ -1,9 +1,10 @@
 import React, { memo } from "react";
+import Main from './Main';
 
-const Home = memo(function Home(props) {
+const Home = memo(()=> {
   return (
     <div>
-      Home
+      <Main />
     </div>
   );
 });

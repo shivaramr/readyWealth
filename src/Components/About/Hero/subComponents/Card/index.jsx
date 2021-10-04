@@ -17,13 +17,16 @@ const Card = memo((props) => {
         <h6 class={style.cardSubHead}>{designation}</h6>
         <p class={style.cardDesc}>{desc}</p>
         <div class={style.socialLinks}>
-          <a href={fb} target="_blank" rel="noopener noreferrer">
+          {/* <a href={fb} target="_blank" rel="noopener noreferrer"> */}
+          <a href={fb}>
             <FaFacebookSquare size={35} style={style.icons} />
           </a>
-          <a href={twitter} target="_blank" rel="noopener noreferrer">
+          {/* <a href={twitter} target="_blank" rel="noopener noreferrer"> */}
+          <a href={twitter}>
             <FaTwitterSquare size={35} style={style.icons} />
           </a>
-          <a href={linkedIn} target="_blank" rel="noopener noreferrer">
+          {/* <a href={linkedIn} target="_blank" rel="noopener noreferrer"> */}
+          <a href={linkedIn}>
             <FaLinkedin size={35} style={style.icons} />
           </a>
         </div>

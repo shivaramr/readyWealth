@@ -1,3 +1,3 @@
 export const style = {
-  main: "col-md-4",
+  main: "col-md-4 p-4",
 };
