@@ -1,5 +1,5 @@
 export const style = {
-  card: "card m-3",
+  card: "card m-3 animate__animated animate__fadeInUp",
   cardStyle: { width: "18rem" },
   img: "card-img-top p-2",
   cardBody: "card-body",

@@ -1,44 +1,72 @@
 import { createContext } from "react";
 
 const init = (initState) => {
-  return {
-    ...initState,
-    lineList: [],
-  };
+    return {
+        ...initState,
+        selectService : 'Insurance',
+        services: [],
+        insuranceData: [],
+        loanData: [],
+        investData: [],
+        estateData: []
+    }
 };
 
 const initialState = {
-  lineName: [],
+
 };
 
 const reducer = (state, action) => {
-  switch (action.type) {
-    case "FETCH_LINE_NAME": {
-      const {
-        saveHeading: { name },
-      } = action.payload || {};
-      return {
-        ...state,
-        lineName: name,
-      };
+    switch (action.type) {
+        case "SELECTED_SERVICE": {
+            const { payload } = action;
+            // const {} = action.payload || {};
+            return { 
+                ...state,
+                selectService: payload
+            }
+        }
+        case "SERVICES": {
+            const { payload } = action;
+            return { 
+                ...state,
+                services: payload
+            }
+        }
+        case "INSURANCE": {
+            const { insurance } = action.payload || {};
+            return { 
+                ...state,
+                insuranceData: insurance
+            }
+        }
+        case "LOANS": {
+            const { loans } = action.payload || {};
+            return { 
+                ...state,
+                loanData: loans
+            }
+        }
+        case "INVESTMENT": {
+            const { investmentPlans } = action.payload || {};
+            return { 
+                ...state,
+                investData: investmentPlans
+            }
+        }
+        case "REAL_ESTATE": {
+            const { realEstate } = action.payload || {};
+            return { 
+                ...state,
+                estateData: realEstate
+            }
+        }
+        default:
+            return state;
     }
-    case "FETCH_LINE_NAME1": {
-      const {
-        saveHeading: { name },
-      } = action.payload || {};
-      return {
-        ...state,
-        lineName: name,
-      };
-    }
-    default:
-      return state;
-  }
-};
+}
 
 const reducerContext = createContext();
 const { Provider } = reducerContext || {};
 
-export { initialState, reducer, Provider, init, reducerContext };
-// destructure initial state in components as
-// const { dispatch, state: { anything from initialState } } = useContext(reducerContext)
+export { initialState, reducer, Provider, init, reducerContext};

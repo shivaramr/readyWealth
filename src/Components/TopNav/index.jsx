@@ -7,7 +7,6 @@ const TopNav = memo(() => {
   const location = useLocation();
 
   const checkURL = (arg) => {
-    console.log(location.pathname);
     if (location.pathname === arg) return true;
     return false;
   };

@@ -1,5 +1,5 @@
 export const style = {
-    main: "text-center mb-5",
+    main: "text-center ",
     picHght: { height: 500 },
     inlineStyle: {
         color: "#fff",

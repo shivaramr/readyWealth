@@ -1,0 +1,151 @@
+{
+  "services": ["Insurance", "Loans", "Investment Plans", "Real Estate"],
+  "insuranceData": {
+    "insurance": [
+      {
+        "title": "Car Insurance",
+        "points": [
+          "24x7 Break Down Services",
+          "Cashless Repair",
+          "Third Party Property Damage",
+          "Windscreen Glass Coverage",
+          "Nil Depreciation",
+          "Engine Projection"
+        ]
+      },
+      {
+        "title": "Two-wheeler Insurance",
+        "points": [
+          "Minimum Paperwork",
+          "NCB",
+          "Add-on Cover",
+          "Cashless Claims",
+          "More Discounts",
+          "Personal Accident Cover"
+        ]
+      },
+      {
+        "title": "Health Insurance",
+        "points": [
+          "Medical Checkup",
+          "Ambulance",
+          "Pre & Post Hospitalization",
+          "Cashless Transaction",
+          "Tax Benefits"
+        ]
+      },
+      { "title": "Term Insurance", "points": [] },
+      { "title": "Standard Fire And Special Perils Insurance", "points": [] },
+      { "title": "Business Shield Package Policy", "points": [] },
+      { "title": "Group Health Insurance", "points": [] },
+      { "title": "Group Personal Insurance", "points": [] },
+      { "title": "Marine Cargo Insurance Policy", "points": [] },
+      { "title": "Workmen Compensation Insurance Policy", "points": [] },
+      { "title": "Cyber Liability Insurance", "points": [] },
+      { "title": "Commercial General Liability", "points": [] },
+      { "title": "Directors And Officers Liability Insurance", "points": [] },
+      {
+        "title": "Professional Indemnity / Professional Liability / Errors And Omissions",
+        "points": []
+      },
+      { "title": "Professional Indemnity - Doctors/Hospital", "points": [] },
+      { "title": "Public Offering of Securities Insurance", "points": [] },
+      { "title": "Employee Dishonesty Insurance", "points": [] },
+      {
+        "title": "Employment Practices Liability Insurance Policy",
+        "points": []
+      },
+      { "title": "Total Recall Contamination", "points": [] },
+      { "title": "Miscellanous Line of Business", "points": [] },
+      { "title": "Engineering Line of Business", "points": [] },
+      { "title": "Wedding Insurance", "points": [] },
+      {
+        "title": "Credit/Debit/ATM Card Package Insurance Policy",
+        "points": []
+      }
+    ]
+  },
+  "loanData": {
+    "loans": [
+      { "title": "Home Loan", "points": [] },
+      { "title": "Auto/Car Loan", "points": [] },
+      { "title": "Personal Loan", "points": [] },
+      {
+        "title": "Loan against Property",
+        "points": [
+          "Easy and hassle free documentation",
+          "Longer tenure, smaller EMIs",
+          "Simple repayments through monthly instalments",
+          "Attractive interest rates",
+          "Integrated branch network for availing and servicing the loan anywhere in India",
+          "Loan against fully constructed, freehold residential and commercial properties for: Business Needs; Marriage, medical expenses and other personal needs; transferring your outstanding loan availed from another Bank / Financial Institution"
+        ]
+      },
+      { "title": "Construction Equipment Finance", "points": [] },
+      { "title": "Commercial Vehicle Finance", "points": [] },
+      { "title": "Diesel Finance", "points": [] },
+      { "title": "Tyre Finance", "points": [] },
+      { "title": "Insurance Finance", "points": [] },
+      { "title": "Farm Equipment Finance", "points": [] },
+      { "title": "SME Finance", "points": [] },
+      { "title": "Leasing", "points": [] },
+      { "title": "Commercial Property Loans", "points": [] },
+      { "title": "Plot Loans", "points": [] },
+      { "title": "Commercial Plot Loans", "points": [] },
+      { "title": "Commercial Property Loans", "points": [] },
+      { "title": "Rural Housing Loans", "points": [] }
+    ]
+  },
+  "investData": {
+    "investmentPlans": [
+      {
+        "title": "Digital Gold",
+        "points": [
+          "Digi-Gold Savings Plan",
+          "Powered by MMTC-PAMP",
+          "Secure Gold",
+          "Safe Conversion Anytime"
+        ]
+      },
+      { "title": "Fixed Deposits", "points": [] },
+      {
+        "title": "Bonds and NCD's",
+        "points": [
+          "Public Sector Undertaking Bonds",
+          "Bonds to earn monthly Fixed Income",
+          "High Yield Bonds",
+          "Ultra Short Term Bonds",
+          "Highly Safe Bonds",
+          "Tax Free Bonds",
+          "Bonds for Senior Citizens",
+          "Public Sector Bank Bonds",
+          "State Government Guranteed Bonds",
+          "Private Sector Bank",
+          "Bonds to earn Quarterly Fixed Income",
+          "NBFC Bonds",
+          "Best Ongoing IPOs",
+          "Bonds for Long Term Investment",
+          "Bonds for Short Term Investment",
+          "NRI eligible Bonds",
+          "Capital Gain (54EC) Bonds",
+          "Bonds at Discounted Price"
+        ]
+      },
+      { "title": "PMS/AIF", "points": [] },
+      { "title": "Pre IPO/Unlisted Securities", "points": [] }
+    ]
+  },
+  "estateData": {
+    "realEstate": [
+      {
+        "title": "Pre-Leased Commercial Estate",
+        "points": [
+          "Stable Assets Class",
+          "Diversified Portfolio",
+          "High Yields"
+        ]
+      },
+      { "title": "Residential/Commercial Estates", "points": [] }
+    ]
+  }
+}

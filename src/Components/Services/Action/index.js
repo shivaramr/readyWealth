@@ -1,44 +1,42 @@
-// APIS to be done here
+import * as data from "./dummyData.json";
+import {
+  estateActionCreator,
+  insuranceActionCreator,
+  investmentActionCreator,
+  loanActionCreator,
+  selectedServiceActionCreator,
+  serviceActionCreator,
+} from "./actionCreator";
 
-const fetchFnActionCreator = (payload) => {
-  const { status } = payload || {};
-  if (status) {
-    return {
-      type: "FETCH_LINE_NAME",
-      payload,
-    };
-  }
-  return { type: "FETCH_LINE_NAME", payload: null };
+const setSelectService = ({ dispatch, service }) => {
+  dispatch(selectedServiceActionCreator(service))
 };
 
-const getLineName = ({ dispatch, body }) => {
-  // fetchFN is the fetch API function
-  fetchFN()
-    .then((response) => {
-      if (response.status !== 200)
-        throw new Error("Server responds with error");
-      return response.json();
-    })
-    .then((resultJson) => {
-      dispatch(fetchFnActionCreator(resultJson));
-    });
+const getServiceList = ({ dispatch }) => {
+  dispatch(serviceActionCreator(data.services));
 };
 
-const fetchFn1ActionCreator = (payload) => {
-  const { status } = payload || {};
-  if (status) {
-    return {
-      type: "FETCH_LINE_NAME1",
-      payload,
-    };
-  }
-  return { type: "FETCH_LINE_NAME1", payload: null };
+const getInsuranceList = ({ dispatch }) => {
+  dispatch(insuranceActionCreator(data.insuranceData));
 };
 
-const getLineName1 = async ({ dispatch, body }) => {
-  // fetchFN1 is the fetch API function
-  const result = await fetchFn1(body);
-  dispatch(fetchFn1ActionCreator(result.json()));
+const getLoanList = ({ dispatch }) => {
+  dispatch(loanActionCreator(data.loanData));
 };
 
-export { getLineName, getLineName1 };
+const getInvestmentList = ({ dispatch }) => {
+  dispatch(investmentActionCreator(data.investData));
+};
+
+const getEstateList = ({ dispatch }) => {
+  dispatch(estateActionCreator(data.estateData));
+};
+
+export {
+  setSelectService,
+  getServiceList,
+  getInsuranceList,
+  getLoanList,
+  getInvestmentList,
+  getEstateList,
+};

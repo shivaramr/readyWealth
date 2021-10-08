@@ -1,5 +1,5 @@
 export const cardStyle = {
-  main: "card text-white bg-dark mb-3",
+  main: "card text-white bg-dark mb-3 animate__animated animate__slideInDown",
   mainStylObj: { maxWidth: "18rem" },
   body: "card-body",
   title: "card-title text-center",
