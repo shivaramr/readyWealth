@@ -1,0 +1,3 @@
+https://nervous-wozniak-2def7d.netlify.app/
+
+A demo of the developed UI can be seen in the above link.
