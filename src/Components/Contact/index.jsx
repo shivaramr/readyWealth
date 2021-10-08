@@ -9,7 +9,7 @@ const Contact = memo(() => {
   return (
     <>
       <HeadImg imgLink={abtImg} title={"CONTACT US"} />
-      <div class={style.main}>
+      <div className={style.main}>
         <Side />
         <Form />
       </div>

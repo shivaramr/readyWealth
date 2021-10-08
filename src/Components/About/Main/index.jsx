@@ -13,8 +13,8 @@ function Main() {
     <HeadImg 
       title={'ABOUT US'}
       />
-    <div class={style.main}>
-      {/* <h1 class={style.head}>About Us</h1> */}    
+    <div className={style.main}>
+      {/* <h1 className={style.head}>About Us</h1> */}    
       <Head data={data} />
       <Hero />
       <Body />

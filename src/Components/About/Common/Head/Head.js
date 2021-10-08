@@ -6,14 +6,14 @@ const Head = memo((props) => {
   const { head, pic, desc } = data || {};
 
   return (
-      <div class={style.main}>
+      <div className={style.main}>
         <img
           src={pic}
           alt="logo"
           //   style={{ width: "40%", height: '40%' }}
-          class={style.img}
+          className={style.img}
         />
-        <div class={style.data}>
+        <div className={style.data}>
           <h2>{head}</h2>
           <p>{desc}</p>
         </div>

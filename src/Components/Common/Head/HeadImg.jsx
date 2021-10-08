@@ -6,7 +6,7 @@ const HeadImg = memo((props) => {
   const { imgLink, title } = props;
   
   return (
-    <div class={style.main}>
+    <div className={style.main}>
       <Parallax bgImage={imgLink || style.img} strength={-200}>
         <div style={style.picHght}>
           <h1 style={style.inlineStyle}>{title}</h1>

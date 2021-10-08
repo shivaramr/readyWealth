@@ -10,13 +10,13 @@ const Card = memo((props) => {
     element || {};
 
   return (
-    <div class={style.card} style={style.cardStyle}>
-      <img src={image} class={style.img} alt={designation} />
-      <div class={style.cardBody}>
-        <h5 class={style.cardHead}>{name}</h5>
-        <h6 class={style.cardSubHead}>{designation}</h6>
-        <p class={style.cardDesc}>{desc}</p>
-        <div class={style.socialLinks}>
+    <div className={style.card} style={style.cardStyle}>
+      <img src={image} className={style.img} alt={designation} />
+      <div className={style.cardBody}>
+        <h5 className={style.cardHead}>{name}</h5>
+        <h6 className={style.cardSubHead}>{designation}</h6>
+        <p className={style.cardDesc}>{desc}</p>
+        <div className={style.socialLinks}>
           {/* <a href={fb} target="_blank" rel="noopener noreferrer"> */}
           <a href={fb}>
             <FaFacebookSquare size={35} style={style.icons} />

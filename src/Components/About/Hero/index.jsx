@@ -5,7 +5,7 @@ import { style } from "./style";
 
 const Hero = memo(() => {
   return (
-    <div class={style.main}>
+    <div className={style.main}>
       {data.map((ele) => (
         <Card key={ele.id} element={ele} />
       ))}

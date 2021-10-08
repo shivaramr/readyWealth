@@ -8,9 +8,9 @@ const Card = memo((props) => {
     <Container>
       <h3>{title}</h3>
       <hr />
-      <div class={style.body}>
+      <div className={style.body}>
         {logo}
-        <h4 class={style.data}>{details}</h4>
+        <h4 className={style.data}>{details}</h4>
       </div>
     </Container>
   );

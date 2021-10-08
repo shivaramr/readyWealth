@@ -4,8 +4,8 @@ import { style } from "./style";
 
 const Footer = memo(function Footer(props) {
   return (
-    <nav class={style.nav}>
-      <div class={style.wrapDiv}>
+    <nav className={style.nav}>
+      <div className={style.wrapDiv}>
         <Foot />
       </div>
     </nav>

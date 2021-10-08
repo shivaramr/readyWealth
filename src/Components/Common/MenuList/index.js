@@ -30,7 +30,7 @@ const MenuList = memo((props) => {
       <div className={style.body}>
         <h3>{selected || ""}</h3>
         <div className={style.body1}>
-          {Array.isArray(mainBody) && mainBody.map(ele => ele)}
+          {Array.isArray(mainBody) && mainBody.map((ele) => ele)}
         </div>
       </div>
     </div>

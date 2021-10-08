@@ -4,7 +4,7 @@ import { style } from "./style";
 
 function PrivacyPolicy() {
   return (
-    <div class={style.mainDiv}>
+    <div className={style.mainDiv}>
       <h1>{data.title}</h1>
       <p>{data.main}</p>
 

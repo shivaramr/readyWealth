@@ -6,7 +6,7 @@ import { style } from "./style";
 
 function Side() {
   return (
-    <div class={style.main}>
+    <div className={style.main}>
       {data.map(({ id, title, logo, details }) => (
         <Card key={id} title={title} logo={logo} details={details} />
       ))}

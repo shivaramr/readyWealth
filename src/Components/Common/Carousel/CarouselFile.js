@@ -10,7 +10,7 @@ const CarouselFile = memo((props) => {
   // var image3 = `https://i.picsum.photos/id/146/5184/3456.jpg?hmac=G_lxX9tIxlu06vWGZhaLVSwVD0Id60UslhgveMXNEpo`;
 
   return (
-    <div class="p-5">
+    <div className="p-5">
       {Array.isArray(data) && (
         <Carousel>
           {data?.map(({ id, img, label, text }) => (

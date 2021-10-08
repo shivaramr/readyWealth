@@ -5,19 +5,19 @@ import { style } from "./style";
 
 const Head = memo(() => {
   return (
-    <div class={style.main}>
-      <div class={style.row}>
-        <div class={style.col1}>
-          <span class={style.tag}>{data.tag}</span>
+    <div className={style.main}>
+      <div className={style.row}>
+        <div className={style.col1}>
+          <span className={style.tag}>{data.tag}</span>
           <h1>{data.title}</h1>
           <p>{data.desc}</p>
-          <button type="button" class={style.btn}>
-            <a href='/services' class={style.btnA}>
+          <button type="button" className={style.btn}>
+            <a href='/services' className={style.btnA}>
               {data.btn}
             </a>
           </button>
         </div>
-        <div class={style.col2}>
+        <div className={style.col2}>
           <CarouselFile 
           data={carouselData}
           />

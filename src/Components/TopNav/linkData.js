@@ -5,17 +5,17 @@ export const linkData = [
         title: 'Home',
     },
     {
-        id:1,
+        id:2,
         link: '/aboutUs',
         title: 'About Us',
     },
     {
-        id:1,
+        id:3,
         link: '/services',
         title: 'Services',
     },
     {
-        id:1,
+        id:4,
         link: '/contact',
         title: 'Contact Us',
     },
