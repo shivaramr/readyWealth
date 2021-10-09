@@ -52,20 +52,18 @@ function Body() {
     serviceArr().map(({ title, points }, id) => (
       <Card key={id} title={title} points={points} />
     )) || [];
-  
+
   const handleSelect = (arg) => {
     setSelectService({ dispatch, service: arg });
   };
 
   return (
-    <div>
-      <MenuList
-        selected={selectService}
-        clickOption={handleSelect}
-        sideList={services}
-        mainBody={listArr}
-      />
-    </div>
+    <MenuList
+      selected={selectService}
+      clickOption={handleSelect}
+      sideList={services}
+      mainBody={listArr}
+    />
   );
 }
 

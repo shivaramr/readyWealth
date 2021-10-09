@@ -56,3 +56,9 @@
 .body1 > * {
   flex: 0 1 30%;
 }
+
+@media screen and (max-width: 414px) {
+  .body1 > * {
+    flex: 1 1 100%;
+  } 
+ }
