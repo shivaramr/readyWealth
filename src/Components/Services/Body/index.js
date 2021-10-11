@@ -39,7 +39,7 @@ function Body() {
         return insuranceData;
       case "Loans":
         return loanData;
-      case "Investments":
+      case "Investment Plans":
         return investData;
       case "Real Estate":
         return estateData;
