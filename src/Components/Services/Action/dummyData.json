@@ -2,7 +2,7 @@
   "services": [
     {"name":"Insurance", "alt": "Protect"},
     {"name":"Loans","alt": "Leverage"},
-    {"name":"Investment", "alt": "Invest and Aspire"},
+    {"name":"Investment Plans", "alt": "Invest and Aspire"},
     {"name":"Real Estate","alt": "Real Estate"}
   ],
   "insuranceData": {
