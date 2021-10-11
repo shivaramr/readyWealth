@@ -40,7 +40,7 @@
   background-color: #0275d0;
   color: #fff;
   border-radius: 5px;
-  cursor: context-menu;
+  cursor: pointer;
 }
 
 .body {
@@ -58,7 +58,19 @@
 }
 
 @media screen and (max-width: 414px) {
+  .main{
+    min-height: auto;
+  }
   .body1 > * {
     flex: 1 1 100%;
   } 
+  .sideBody{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sideBody > * {
+    margin: auto;
+    padding: 0.5%;
+  }
  }
