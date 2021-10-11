@@ -35,11 +35,11 @@ function Body() {
 
   const serviceArr = () => {
     switch (selectService) {
-      case "Insurance":
+      case "Protect":
         return insuranceData;
-      case "Loans":
+      case "Leverage":
         return loanData;
-      case "Investment Plans":
+      case "Invest and Aspire":
         return investData;
       case "Real Estate":
         return estateData;

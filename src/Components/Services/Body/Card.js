@@ -7,13 +7,11 @@ const Card = memo((props) => {
     <div className={cardStyle.main}>
       <div className={cardStyle.bpy}>
         <h4 className={cardStyle.title}>{title || ""}</h4>
-        <p className={cardStyle.text}>
           <ul>
             {Array.isArray(points)
-              ? points.map((ele, id) => <li>{ele}</li>)
+              ? points.map((ele, id) => <li key={id} className={cardStyle.text}>{ele}</li>)
               : ""}
           </ul>
-        </p>
       </div>
     </div>
   );

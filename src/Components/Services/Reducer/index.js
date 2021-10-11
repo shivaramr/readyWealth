@@ -3,7 +3,7 @@ import { createContext } from "react";
 const init = (initState) => {
     return {
         ...initState,
-        selectService : 'Insurance',
+        selectService : 'Protect',
         services: [],
         insuranceData: [],
         loanData: [],
