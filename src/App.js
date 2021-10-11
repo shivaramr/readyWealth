@@ -7,18 +7,12 @@ import Services from "./Components/Services";
 import Footer from "./Components/Footer";
 import TermsAndConditions from "./Components/Footer/subComponents/TermsAndConditions";
 import PrivacyPolicy from "./Components/Footer/subComponents/PrivacyPolicy";
-import { Scrollbars } from "react-custom-scrollbars";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import "./App.css";
+import "./App.css";
 
 function App() {
   return (
-    // <div class='body'>
-    <Scrollbars
-      style={{ height: "100vh" }}
-      autoHide
-      autoHideDuration={200}
-    >
+    <div class='body'>
       <Router>
         <TopNav />
         <Switch>
@@ -31,7 +25,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </Scrollbars>
+    </div>
   );
 }
 
