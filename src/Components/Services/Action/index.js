@@ -8,8 +8,8 @@ import {
   serviceActionCreator,
 } from "./actionCreator";
 
-const setSelectService = ({ dispatch, service }) => {
-  dispatch(selectedServiceActionCreator(service))
+const setSelectService = ({ dispatch, service, id }) => {
+  dispatch(selectedServiceActionCreator({ service, id }));
 };
 
 const getServiceList = ({ dispatch }) => {

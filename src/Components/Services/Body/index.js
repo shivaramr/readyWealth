@@ -34,12 +34,12 @@ function Body() {
   }, []);
 
   const serviceArr = () => {
-    switch (selectService) {
-      case "Protect":
+    switch (services[selectService]?.name) {
+      case "Insurance":
         return insuranceData;
-      case "Leverage":
+      case "Loans":
         return loanData;
-      case "Invest and Aspire":
+      case "Investments":
         return investData;
       case "Real Estate":
         return estateData;
@@ -53,8 +53,8 @@ function Body() {
       <Card key={id} title={title} points={points} />
     )) || [];
 
-  const handleSelect = (arg) => {
-    setSelectService({ dispatch, service: arg });
+  const handleSelect = (arg, id) => {
+    setSelectService({ dispatch, service: arg, id });
   };
 
   return (
